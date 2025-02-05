@@ -115,6 +115,15 @@ section {
     background-color: var(--second-bg-color);
 }
 
+.white-text {
+     color: var(--text-color);
+  }
+  
+  #dynamic-text {
+    transition: opacity 0.7s ease-in-out;
+    color: var(--main-color)
+  }
+  
 .slide {    
     margin-bottom: 3.515vh;
 }
@@ -735,13 +744,13 @@ height: 50%;
         padding-left: 15%;
     }
     .one{
-        font-size:1.5rem;
+        font-size:1.2rem;
     }
     .two{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .home-text h1{
-        font-size:3.5rem;
+        font-size:3rem;
     }
    .home-text h3{
     margin-top: 20px;
@@ -779,11 +788,12 @@ height: 50%;
 }
 
 .Profiles-content {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100%,auto));
-        align-items: center;
-        gap: 2rem;
-    }
+    display: flex;  /* Change grid to flex */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: center; /* Center items */
+    gap: 2rem; /* Maintain spacing */
+}
+
 
 
     .bx-menu{
@@ -1015,6 +1025,4 @@ height: 50%;
         .Profiles-content{
             gap:1rem;
         }
-
 }
-
